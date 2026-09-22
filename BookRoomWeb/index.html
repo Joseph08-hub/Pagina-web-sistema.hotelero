@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookRoom — Hotel en San Salvador</title>
+<meta name="description" content="BookRoom, un hotel en el corazón de San Salvador. Conoce nuestras habitaciones, servicios y galería.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <a href="#inicio" class="brand">
+      <img src="images/logo.png" alt="Logotipo de BookRoom">
+      <span>BookRoom</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>+503 2228-3400</span>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section class="hero" id="inicio">
+  <div class="hero-panel">
+    <div class="hero-copy" id="heroCopy">
+      <p class="kicker">San Salvador, El Salvador</p>
+      <h1>Descanse en el corazón de la ciudad</h1>
+      <p>BookRoom combina la calidez del trato salvadoreño con la comodidad de un hotel pensado para viajeros de negocio y de placer. Habitaciones cuidadas, servicio cercano y una ubicación que lo pone todo a un paso.</p>
+      <div class="hero-actions">
+        <a href="#habitaciones" class="btn btn--primary">Ver habitaciones</a>
+        <a href="#ubicacion" class="btn btn--outline">Cómo llegar</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>9</strong><span>Habitaciones</span></div>
+        <div><strong>4</strong><span>Tipos de habitación</span></div>
+        <div><strong>24h</strong><span>Recepción</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual" id="heroVisual">
+    <div class="slide is-active" style="background-image:url('images/hero-1.jpg')"></div>
+    <div class="slide" style="background-image:url('images/hero-2.jpg')"></div>
+    <div class="slide" style="background-image:url('images/hero-3.jpg')"></div>
+    <div class="hero-dots" id="heroDots"></div>
+    <div class="scroll-cue"><span class="line"></span> Desliza para conocer más</div>
+  </div>
+</section>
+
+<!-- =========================================================
+     NOSOTROS
+========================================================= -->
+<section class="section" id="nosotros">
+  <div class="container about-grid">
+    <img src="images/about.jpg" alt="Recepción del hotel BookRoom">
+    <div>
+      <p class="eyebrow-line">Nuestra historia</p>
+      <h2>Un hotel pensado para sentirse como en casa</h2>
+      <p>BookRoom nació de una idea simple: que hospedarse fuera de casa no tenga que sentirse frío ni impersonal. Cuidamos cada detalle, desde la limpieza de las habitaciones hasta el trato de nuestro equipo de recepción, para que cada estadía —de una noche o de varias semanas— se sienta atendida.</p>
+      <p>Ya sea que nos visite por trabajo, por una escapada de fin de semana o de paso por San Salvador, nuestro equipo está disponible las 24 horas para que no le falte nada.</p>
+      <div class="about-facts">
+        <div><strong>7:00</strong><span>Hora de entrada</span></div>
+        <div><strong>12:00</strong><span>Hora de salida</span></div>
+        <div><strong>4</strong><span>Pisos</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     HABITACIONES
+========================================================= -->
+<section class="section section--ivory" id="habitaciones">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow-line">Alojamiento</p>
+      <h2>Una habitación para cada viaje</h2>
+      <p>Cuatro categorías pensadas según cuántas personas viajan y qué tanto espacio necesitan. Todas incluyen aire acondicionado, wifi y limpieza diaria.</p>
+    </div>
+
+    <div class="rooms-grid">
+      <article class="room-card">
+        <figure><img src="images/room-individual.jpg" alt="Habitación Individual"></figure>
+        <div>
+          <div class="room-top">
+            <h3>Individual</h3>
+            <div class="room-price">$35<span>por noche</span></div>
+          </div>
+          <p>Pensada para el viajero que va solo: cómoda, silenciosa y con todo lo necesario para una estadía corta o de trabajo.</p>
+          <div class="room-meta">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 12a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v5h16z"/><path d="M22 17v2M2 17v2M4 12V7a2 2 0 0 1 2-2h1"/></svg>1 persona</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>18 m²</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <figure><img src="images/room-doble.jpg" alt="Habitación Doble"></figure>
+        <div>
+          <div class="room-top">
+            <h3>Doble</h3>
+            <div class="room-price">$55<span>por noche</span></div>
+          </div>
+          <p>Dos camas o una cama doble, ideal para colegas de viaje o amigos que prefieren compartir habitación sin perder comodidad.</p>
+          <div class="room-meta">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 12a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v5h16z"/><path d="M22 17v2M2 17v2M4 12V7a2 2 0 0 1 2-2h1"/></svg>2 personas</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>24 m²</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <figure><img src="images/room-matrimonial.jpg" alt="Habitación Matrimonial"></figure>
+        <div>
+          <div class="room-top">
+            <h3>Matrimonial</h3>
+            <div class="room-price">$65<span>por noche</span></div>
+          </div>
+          <p>Cama matrimonial y un ambiente pensado para parejas, con un poco más de espacio para descansar sin prisa.</p>
+          <div class="room-meta">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 12a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v5h16z"/><path d="M22 17v2M2 17v2M4 12V7a2 2 0 0 1 2-2h1"/></svg>2 personas</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>26 m²</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <figure><img src="images/room-suite.jpg" alt="Suite BookRoom"></figure>
+        <div>
+          <div class="room-top">
+            <h3>Suite</h3>
+            <div class="room-price">$120<span>por noche</span></div>
+          </div>
+          <p>Nuestra categoría más amplia: sala de estar independiente y amenidades premium para quienes buscan un extra de comodidad.</p>
+          <div class="room-meta">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 12a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v5h16z"/><path d="M22 17v2M2 17v2M4 12V7a2 2 0 0 1 2-2h1"/></svg>Hasta 4 personas</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>42 m²</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SERVICIOS
+========================================================= -->
+<section class="section section--navy" id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow-line" style="color:#00C9B7">Lo que incluye su estadía</p>
+      <h2>Servicios y amenidades</h2>
+      <p>Todo lo que necesita está incluido, sin sorpresas ni cargos escondidos.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+        <div><h4>Wifi de alta velocidad</h4><p>Conexión gratuita en todas las habitaciones y áreas comunes.</p></div>
+      </div>
+      <div class="service-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M2 12a5 5 0 0 1 5-5h10a5 5 0 0 1 5 5M2 12v5h20v-5M6 12V9a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3"/></svg></div>
+        <div><h4>Recepción 24 horas</h4><p>Nuestro equipo está disponible en todo momento para lo que necesite.</p></div>
+      </div>
+      <div class="service-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></div>
+        <div><h4>Aire acondicionado</h4><p>Control de temperatura individual en cada habitación.</p></div>
+      </div>
+      <div class="service-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></div>
+        <div><h4>Estacionamiento privado</h4><p>Espacio seguro para su vehículo dentro de las instalaciones.</p></div>
+      </div>
+      <div class="service-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg></div>
+        <div><h4>Desayuno incluido</h4><p>Servido cada mañana en nuestro comedor principal.</p></div>
+      </div>
+      <div class="service-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 4v16M4 10h16"/></svg></div>
+        <div><h4>Limpieza diaria</h4><p>Habitaciones atendidas todos los días de su estadía.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     GALERÍA
+========================================================= -->
+<section class="section" id="galeria">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow-line">Un vistazo por dentro</p>
+      <h2>Galería</h2>
+      <p>Algunos rincones de BookRoom. Haga clic en cualquier imagen para verla en grande.</p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <button data-full="images/gallery-1.jpg" data-caption="Fachada principal"><img src="images/gallery-1.jpg" alt="Fachada de BookRoom"></button>
+      <button data-full="images/gallery-2.jpg" data-caption="Piscina"><img src="images/gallery-2.jpg" alt="Piscina de BookRoom"></button>
+      <button data-full="images/gallery-3.jpg" data-caption="Restaurante"><img src="images/gallery-3.jpg" alt="Restaurante de BookRoom"></button>
+      <button data-full="images/gallery-4.jpg" data-caption="Gimnasio"><img src="images/gallery-4.jpg" alt="Gimnasio de BookRoom"></button>
+      <button data-full="images/gallery-5.jpg" data-caption="Lobby"><img src="images/gallery-5.jpg" alt="Lobby de BookRoom"></button>
+      <button data-full="images/gallery-6.jpg" data-caption="Jardines"><img src="images/gallery-6.jpg" alt="Jardines de BookRoom"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<!-- =========================================================
+     TESTIMONIOS
+========================================================= -->
+<section class="section section--ivory">
+  <div class="container">
+    <div class="testimonial-wrap">
+      <div class="testimonial is-active">
+        <p class="stars">★★★★★</p>
+        <blockquote>“Llegué por trabajo y me terminé quedando una semana extra. El trato del personal de recepción hizo toda la diferencia.”</blockquote>
+        <cite>— Mario R., huésped de negocios</cite>
+      </div>
+      <div class="testimonial">
+        <p class="stars">★★★★★</p>
+        <blockquote>“La habitación matrimonial superó lo que esperábamos. Todo impecable y muy bien ubicado para movernos por la ciudad.”</blockquote>
+        <cite>— Andrea y Luis, huéspedes</cite>
+      </div>
+      <div class="testimonial">
+        <p class="stars">★★★★☆</p>
+        <blockquote>“Ambiente tranquilo, desayuno rico y el personal siempre dispuesto a ayudar. Sin duda volveré la próxima vez que visite San Salvador.”</blockquote>
+        <cite>— Fernanda G., huésped frecuente</cite>
+      </div>
+
+      <div class="testimonial-nav">
+        <button id="testimonialPrev" aria-label="Testimonio anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button id="testimonialNext" aria-label="Siguiente testimonio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     UBICACIÓN
+========================================================= -->
+<section class="section" id="ubicacion">
+  <div class="container location-grid">
+    <div class="location-info">
+      <p class="eyebrow-line">Cómo llegar</p>
+      <h2>Ubicación</h2>
+      <p>Estamos en una zona céntrica de San Salvador, a pocos minutos de las principales oficinas, centros comerciales y puntos de interés de la ciudad.</p>
+      <dl>
+        <dt>Dirección</dt>
+        <dd>Colonia Escalón, San Salvador, El Salvador</dd>
+        <dt>Teléfono</dt>
+        <dd>+503 2228-3400</dd>
+        <dt>Correo</dt>
+        <dd>reservas@bookroom.com</dd>
+        <dt>Horario de recepción</dt>
+        <dd>Abierto las 24 horas, los 7 días de la semana</dd>
+      </dl>
+    </div>
+    <div class="location-map">
+      <iframe
+        src="https://www.google.com/maps?q=San%20Salvador,%20El%20Salvador&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación de BookRoom en el mapa">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="BookRoom">
+          <span>BookRoom</span>
+        </div>
+        <p style="color:rgba(255,255,255,0.6); font-size:0.9rem; max-width:32ch;">Un hotel en el corazón de San Salvador, pensado para que cada estadía se sienta atendida.</p>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#habitaciones">Habitaciones</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Habitaciones</h5>
+        <ul>
+          <li>Individual</li>
+          <li>Doble</li>
+          <li>Matrimonial</li>
+          <li>Suite</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li>Colonia Escalón, San Salvador</li>
+          <li>+503 2228-3400</li>
+          <li>reservas@bookroom.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> BookRoom. Todos los derechos reservados.</span>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
